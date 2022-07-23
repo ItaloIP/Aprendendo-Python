@@ -13,13 +13,16 @@ print('Você têm {} anos.'.format(idade))
 if idade <= 9:
     print('Classificação: Mirim')
 
-elif 9 >= idade < 14:
+elif idade <= 14:
     print('Classificação: Infantil')
 
-elif 14 >= idade < 19:
+elif idade <=  19:
     print('Classificação: Junior')
 
-elif 19 >= idade < 25:
+elif idade <= 25:
     print('Classificação: Sênior')
-elif idade >= 25:
+
+else:
     print('Classificação: MASTER')
+
+
