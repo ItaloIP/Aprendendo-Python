@@ -1,2 +1,2 @@
-# Python-Aprendendo
- Momento de aprendizado de Python, nada extravagante.
+# Aprendizado de Python
+ Momento de aprendizado com Python, nada extravagante.
