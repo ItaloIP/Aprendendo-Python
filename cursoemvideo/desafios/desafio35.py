@@ -10,9 +10,9 @@ if m3>m1 and m3>m2:
 
 menor = m1 + m2
 if m2 + m3 < m1:
-    menor = (m2 + m3)
+    menor = m2 + m3
 if m1 + m3 < m2:
-    menor = (m1 + m3)
+    menor = m1 + m3
 '''
 
 if m1 < m2 + m3 and m2 < m1 + m3 and m3 < m1 + m2:
