@@ -1,8 +1,6 @@
-from time import sleep
-
-
+from time import sleep 
 import emoji
-for c in range(10, -1, -1):
+for cont in range(10, -1, -1):
+    print(cont)
     sleep(1)
-    print(c)
-print(emoji.emojize('feliz ano novo! :thumbs_up:'))
+print(emoji.emojize('BOOM!! PUUWWW!! :thumbs_up:'))
