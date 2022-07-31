@@ -16,7 +16,7 @@ print('Você JOGOU {}'.format(itens[escolha]))
 print('O ROBO jogou {}.'.format(itens[robo]))
 print('-='*8)
 
-sleep(0.8)
+sleep(0.9)
 
 if robo == 0: #ROBO joga PEDRA
     if escolha == 0: #JOGADOR joga PEDRA
