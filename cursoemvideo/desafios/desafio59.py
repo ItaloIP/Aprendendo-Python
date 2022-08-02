@@ -38,9 +38,13 @@ while change != 5:
         n1 = int(input('Digite um valor: '))
         n2 = int(input('Digite o seugndo valor: '))
 
+    elif change == 5:
+        print('Você escolheu sair.')
+        sleep(0.7)
+        print('Adeus!')
+    else:
+        print('Escolha inválida. Escolha novamente...')
+
+
 
     sleep(1.2)
-
-print('Você escolheu sair.')
-sleep(0.7)
-print('Adeus!')
