@@ -1,19 +1,14 @@
 num = int(input('Digite um número inteiro: '))
 pa = int(input('Digite a razão aritmética: '))
+termo = pa
 cont = 1
-co = 0
-while cont <= 10:
-    num = num + pa
-    cont += 1
-    co += 1
-    print(num, end=' > ')
-print('Pausa')
-
-c = int(input('Quantos termos você quer mostrar a mais?: '))
-if c != 0:
-    while c != 0:
-        while cont <= 10 + c:
-            num = num + pa
-            cont +=1
-            co += 1
-            print(num, end=' > ')
+total = 0
+mais = 10
+while mais != 0:
+    total += mais
+    while cont <= total:
+        print(termo, end=' > ')
+        termo += pa
+        cont += 1
+    mais = int(input('Quer mais quantos termos?'))
+print('Ao total, foram {} termos.'.format(cont - 1))
