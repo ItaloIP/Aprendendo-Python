@@ -1,10 +1,8 @@
-n = 1
-par = impar = 0
-while n != 0:
-    n = int(input('Digite um valor: '))
-    if n != 0:
-        if n % 2 == 0:
-            par += 1
-        else:
-            impar += 1
-print('Você digitou {} ímpares e {} números pares.'.format(impar,par))
+n =  s = 0
+while True:
+    n = int(input('Digite um número'))
+    if n == 999:
+        break
+    s += n
+#print('Soma é {}'.format(s))
+print(f'A soma vale {s}')
