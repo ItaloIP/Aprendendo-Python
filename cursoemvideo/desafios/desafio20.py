@@ -1,3 +1,4 @@
+#grupo aleatório
 from random import shuffle
 g1 = input('O primeiro grupo?: ')
 g2 = input('O segundo grupo?: ')

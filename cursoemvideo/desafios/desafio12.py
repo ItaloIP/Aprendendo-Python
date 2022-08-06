@@ -1,3 +1,4 @@
+#Desconto de um produto
 p = float(input('Digite um valor de um produto: '))
 d = float(input('Quantos  de desconto você deseja neste produto? %'))
 

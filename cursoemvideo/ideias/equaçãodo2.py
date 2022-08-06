@@ -17,4 +17,3 @@ print('=-='*15)
 print('X1 = {:.2f}'.format(mais))
 print('X2 = {:.2f}'.format(menos))
 print('=-='*15)
-

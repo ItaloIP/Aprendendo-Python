@@ -1,3 +1,4 @@
+#Cálculo do aluguel de carro
 day = int(input('Quantos dias você ficou com o carro?: '))
 km = float(input('Quantos KM você rodou?: '))
 

@@ -1,3 +1,4 @@
+#Aluno aleatório
 import random
 a1 = input('Primeiro aluno: ')
 a2 = input('Segundo aluno: ')

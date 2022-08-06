@@ -1,3 +1,4 @@
+#Média de duas provas
 n1 = float(input('Digite uma nota de sua prova'))
 n2 = float(input('Digite outra nota de outra prova'))
 s = (n1 + n2) / 2 

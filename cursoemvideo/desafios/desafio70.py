@@ -1,6 +1,5 @@
 total = cont = cont1000 = 0
-barato = False
-caro = 
+barato = ' '
 print('Mercado')
 
 while True:
@@ -11,7 +10,8 @@ while True:
         cont1000 += 1
 
 
-    if price > 
+    barato = price
+    if price 
 
 
 

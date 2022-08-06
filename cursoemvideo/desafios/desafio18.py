@@ -1,3 +1,4 @@
+#calcular seno, cosseno e tangente
 from math import sin, cos, tan, radians
 
 área = float(input('Informe uma área '))

@@ -1,3 +1,4 @@
+#Tabuada 1.0V
 t = int(input('Digite um número que você quer saber da tabuada: '))
 print('-'*12)
 print('{} x{:2} = {:2}'.format(t,1,t*1))
