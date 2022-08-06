@@ -34,7 +34,7 @@ elif robo == 1: #ROBO joga PAPEL
     elif escolha == 1: #JOGADOR joga PAPEL
         print('EMPATE!')
     elif escolha == 2: #JOGADOR joga TESOURA
-        print('ROBO GANHOU!')
+        print('VOCÊ GANHOU!')
     else: #JOGADOR escolheu algo INVÁLIDO
         print('Jogada inválida')
 
