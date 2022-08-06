@@ -9,9 +9,10 @@ b = int(input('Digite o valor do B: '))
 c = int(input('Digite o valor do C: '))
 
 delta = b**2 - 4 * (a * c)
+print(delta)
 
-menos = (-(b) - sqrt(delta)) / (2 * a)
-mais = (-(b) + sqrt(delta)) / (2 * a)
+menos = (-(b) - (sqrt(delta))) / (2 * a)
+mais = (-(b) + (sqrt(delta))) / (2 * a)
 
 print('=-='*15)
 print('X1 = {:.2f}'.format(mais))
