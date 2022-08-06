@@ -15,10 +15,19 @@ sleep(0.8)
 
 while True:
     n = int(input('Número: '))
-    poi = str(input('Par ou Ímpar? [P/I]:  ')).upper().strip()[0]
+    poi = ' '
+    while poi not in 'PI':
+        poi = str(input('Par ou Ímpar? [P/I]:  ')).upper().strip()[0]
+    print('-=-'*20)
+    
     robo = randint(0,10)
     soma = robo + n
-    
+
+    print('-'*3)
+    print(f'O ROBO jogou {robo} e você {n}, ao todo, deu {soma}')
+    print('DEU PAR' if soma % 2 == 0 else 'DEU ÍMPAR')
+    print('-'*3)
+
     if poi == 'P' and soma % 2 == 0:
         cont += 1
         print(f'Parabéns! Você ganhou a {cont} rodada!')
