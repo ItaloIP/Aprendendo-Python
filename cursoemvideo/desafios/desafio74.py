@@ -15,14 +15,8 @@ maior = um
 
 menor = um
 
-if dois > maior:
-    maior = dois
-elif tres > maior:
-    maior = tres
-elif quatro > maior:
-    maior = quatro
-elif cinco > maior:
-    maior = cinco
+#arrumar o maior
+
 
 if dois < menor:
     menor = dois
