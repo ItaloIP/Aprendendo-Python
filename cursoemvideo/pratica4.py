@@ -3,4 +3,4 @@ b = (5, 8 , 1 , 2)
 c = b + a
 
 
-print(c.index(5))
+print(b.index(5))

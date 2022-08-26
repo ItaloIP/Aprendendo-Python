@@ -2,20 +2,30 @@ from random import randint
 
 
 
-um = randint(0,5)
-dois = randint(0,5)
-tres = randint(0,5)
-quatro = randint(0,5)
-cinco = randint(0,5)
+um = randint(0,10)
+dois = randint(0,10)
+tres = randint(0,10)
+quatro = randint(0,10)
+cinco = randint(0,10)
 
 tupla = (um,dois,tres,quatro,cinco)
 print(tupla)
 
-maior = um
 
-menor = um
 
-#arrumar o maior
+maior = menor = um
+
+if um > maior:
+    maior = um
+elif dois > maior:
+    maior = dois
+elif tres > maior:
+    maior = tres
+elif quatro > maior:
+    maior = quatro
+elif cinco > maior:
+    maior = cinco
+
 
 
 if dois < menor:
