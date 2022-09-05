@@ -1,5 +1,5 @@
 from time import sleep
-print('\033[0;32;31mLojas Galaia\33[m')
+print('\033[0;32;31mLojas Galaia\033[m')
 
 valor = float(input('Valor em R$ da compra?: R$'))
 
