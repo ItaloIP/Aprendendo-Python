@@ -1,19 +1,19 @@
-number1 = int(input('Digite qualquer número: '))
-number2 = int(input('Digite qualquer número: '))
-number3 = int(input('Digite qualquer número: '))
-number4 = int(input('Digite qualquer número: '))
-pares = 0
-tupla = (number1,number2,number3,number4)
-tuplap = ''
-
+tupla = (int(input('Digite um número: ')),
+    int(input('Digite um número: ')),
+    int(input('Digite um número: ')),
+    int(input('Digite um número: ')),
+    int(input('Digite o último número: ',)))
 
 print('-'*20)
 print(f'Você digitou os valores {tupla}')
-print('O número NOVE apareceu', tupla.count(9), 'vezes!')
+print(f'O número NOVE apareceu {tupla.count(9)} vezes!')
 
-if tupla.index(3) == 0:
-    print('O valor TRÊS não foi encontrado')
-else:
+if 3 in tupla:
     print('O número TRÊS está na posição', tupla.index(3)+1)
+else:
+    print('O valor TRÊS não foi encontrado')
 
-print(f'Números pares: ')
+print('Os números pares são', end=' ')
+for n in tupla:
+    if n % 2 == 0:
+        print(n, end=' ')
