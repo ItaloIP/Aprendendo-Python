@@ -17,7 +17,7 @@ while True:
 
     b = int(input('Valor do B (caso não tenha, adiciona "0"): '))
     c = int(input('Valor do C (caso não tenha, adiciona "0"): '))
-
+#calcula o delta da função 
     delta = (b**2) - (4 * a * c) 
     print('-='*10)
     sleep(0.8)
@@ -49,7 +49,32 @@ X2 = {x2}''')
 
     print('-='*10)
 
+#cálcula as vértices da função quadrática
     print('\033[0;31;30mVértices\033[m')
     xv = (-(b)) / (2*a)
     yv = (-(delta)) / (4*a)
+    if a > 0:
+        print(f'''O valor da vértice vai ser mínimo
+XV: {xv}
+YV: {yv}''')
+    else:
+        print(f'''O valor da vértice vai ser máximo.
+XV: {xv}
+YV: {yv}''')
+    print('-='*20)
     
+    #Pergunta pro usuário se quer continuar a usar o programa
+    choice = str(input('Quer continuar?: [S/N]: ')).strip().upper()
+    if choice == 'S':
+        print('Carregando...')
+    elif choice == 'N':
+        print('Programa encerrando...')
+        break
+
+    while choice != 'S' or 'N':
+        choice = str(input('Tente novamente! Quer continuar?[S/N]: ')).strip().upper()
+        if choice == 'S':
+            print('Carregando...')
+        elif choice == 'N':
+            print('Programa encerrando...')
+            break
