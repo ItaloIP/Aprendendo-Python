@@ -1,7 +1,5 @@
-lanche = 'Hamburguer', 'Suco', 'Pizza', 'Pudim'
-print(lanche[1:])
-print(lanche[-1])
-print(len(lanche))
-
-for c in lanche:
-    print(c)
+a = [2,3,4,7]
+b = a[:]
+b[2] = 8
+print(f'lista A: {a}')
+print(f'lista B: {b}')

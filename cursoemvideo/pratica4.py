@@ -1,6 +1,13 @@
-a = (2, 5 , 4)
-b = (5, 8 , 1 , 2)
-c = b + a
+num = [2,5,9,1]
 
+num[2] = 3
 
-print(b.index(5))
+num.append(7)
+num.sort(reverse=True)
+num.insert(2, 2)
+if 5 in num:
+    num.remove(5)
+else:
+    print('Não achei o número quatro.')
+print(num)
+print(f'Essa lista tem {len(num)} elementos')

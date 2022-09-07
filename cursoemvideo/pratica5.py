@@ -1,9 +1,11 @@
-pessoa = ('Italo', 16, 'M', 45)
-del(pessoa)
-print(pessoa)
+valores = list()
+'''valores.append(5)
+valores.append(9)
+valores.append(4)'''
 
-while True:
-    for c in 10:
-        if c >= 10:
-            break
+for cont in range (0, 5):
+    valores.append(int(input('Digite um número')))
 
+for c, b in enumerate(valores):
+    print(f'Na posição {c} encontrei o valor {b}')
+print('Cheguei no final da lista')
