@@ -1,5 +1,3 @@
-#escreva 5 valores e compare o maior e o menor
-
 pos = 0
 maior1 = menor1 = 0
 
