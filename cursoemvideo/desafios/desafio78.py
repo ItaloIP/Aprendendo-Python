@@ -14,7 +14,8 @@ menor = min(numbers)
 print('='*24)
 print(f'Você digitou os valores {numbers}')
 
-print(f'O maior número encontrado foi o {maior} na posição ')
+posmaior = numbers.index(maior)
+print(f'O maior número encontrado foi o {maior} na posição: {posmaior}')
 
-    
-print(f'\nO menor número encontrado foi o {menor} na posição ', end=' ')
+posmenor = numbers.index(menor)
+print(f'O menor número encontrado foi o  número{menor} na posição: {posmenor}',)
