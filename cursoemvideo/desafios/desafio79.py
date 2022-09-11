@@ -1,6 +1,8 @@
 number = ''
 numbers = list()
 numbers.append(int(input('Digite qualquer número: ')))
+print('Número adicionado.')
+print('-='*20)
 
 while True:
     choice = str(input('Quer continuar?[S/N]:  ')).strip().upper()

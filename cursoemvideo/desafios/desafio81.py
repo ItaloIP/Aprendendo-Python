@@ -11,6 +11,6 @@ numbers.sort(reverse=True)
 print(f'Você digitou {len(numbers)}')
 print(numbers)
 if 5 in numbers:
-    print('O número 5 está na lista!')
+    print('O número 5 está na lista')
 else:
     print('O número 5 não se encontra na lista!')
