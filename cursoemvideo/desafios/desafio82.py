@@ -6,15 +6,12 @@ while True:
     if choice == 'N':
         break
 print(f'A lista de números que você digitou foi: {numbers}')
-
-
-par = list()
-impar = list()
+par = []
+impar = []
 for n in numbers:
     if n % 2 == 0:
         par.append(n)
     elif n % 2 == 1:
         impar.append(n)
-
 print(f'Números pares: {par}')
 print(f'Números ímpares: {impar}')
