@@ -1,25 +1,17 @@
-from random import randint
-from time import sleep
-lista = list()
-jogos = list()
+from random import sample
+import time
 
-
-quant = int(input('Quantos jogos quer fazer?: '))
-tot = 1
-while tot <= quant:
-    cont = 0
-    while True:
-        num = randint(1,60)
-        if num not in lista:
-            lista.append(num)
-            cont += 1
-        if cont >= 6:
-            break
-        lista.sort()
-        jogos.append(lista[:])
-        lista.clear()
-        tot += 1
-print(jogos)
-#for i, l in enumerate(jogos):
- #   print(f'Jogo {i + 1}: {l}')
-  #  sleep(1)
+sorteios = []
+print('='*50)
+print(f'{"JOGO DA MEGA SENA":^50}')
+print('='*50)
+n = int(input('Quantos jogos você quer que eu sorteie? '))
+for c in range(0, n):
+    sorteios.append(sorted(sample(range(1, 61), 6)))
+print('='*50)
+print(f'Os sorteios dos {n} jogos são os seguintes:')
+for a, b in enumerate(sorteios):
+    time.sleep(1)
+    print(f'JOGO {a + 1}: {b}')
+time.sleep(1)
+print('='*50)
