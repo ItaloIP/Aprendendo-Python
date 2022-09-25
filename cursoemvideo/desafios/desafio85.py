@@ -1,18 +1,13 @@
-lista = []
-par = []
-impar = []
-
+lista = [[],[]]
+dados = list()
 for c in range(1,8):
-    lista.append(int(input(f'Digite o {c}^o número: ')))
-
-for num in lista:
-    if num % 2 == 0:
-        par.append(num)
+    dados.append(int(input(f'Digite o {c}^o número: ')))
+    if (dados[0] % 2) == 0:
+        lista[0].append(dados[:])
     else:
-        impar.append(num)
-
-par.sort()
-impar.sort()
-
-print(f'Os números pares foram: {par}')
-print(f'Os números ímpares foram: {impar}')
+        lista[1].append(dados[:])
+    dados.clear()
+lista[0].sort()
+lista[1].sort()
+print(f'Os números pares foram: {lista[0]}')
+print(f'Os números ímpares foram: {lista[1]}')
