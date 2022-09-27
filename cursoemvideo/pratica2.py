@@ -1,3 +1,6 @@
-galera = [['Joao', 19], ['Ana',33], ['Joaquim', 13]]
-for p in galera:
-    print(f'{p[0]} têm {p[1]} anos!')
+brasil = []
+estado1 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
+estado2 = {'uf': 'Minas Gerais', 'sigla': 'MG'}
+brasil.append(estado1)
+brasil.append(estado2)
+print(brasil)

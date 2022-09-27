@@ -1,13 +1,9 @@
-galera= list()
-dado = list()
+estado = dict()
+brasil = list()
 for c in range(0, 3):
-    dado.append(str(input('Nome: ')))
-    dado.append(int(input('Idade: ')))
-    galera.append(dado[:])
-    dado.clear()
-
-for p in galera:
-    if p[1] >= 21:
-        print(f'{p[0]} é maior de idade.')
-    else:
-        print(f'{p[0]} é menor de idade!')
+    estado['uf'] = str(input('UF: '))
+    estado['sigla'] = str(input('Sigla do Estado: '))
+    brasil.append(estado.copy())
+for e in brasil:
+    for k, v in e.items():
+        print(f'O campo {k} tem valor {v}')

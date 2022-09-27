@@ -1,9 +1,7 @@
-teste = list()
-teste.append('Italo')
-teste.append(16)
-galera = list()
-galera.append(teste[:])
-teste[0] = 'Maria'
-teste[1] = 22
-galera.append(teste[:])
-print(galera)
+pessoas = {'nome': 'Italo', 'sexo':'M', 'idade': 16}
+pessoas['peso'] = 47.5
+#del pessoas['sexo']
+#print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
+#print(pessoas.keys())
+for k, v in pessoas.items():
+    print(f'{k} = {v}')
