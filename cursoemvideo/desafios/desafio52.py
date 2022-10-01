@@ -8,6 +8,7 @@ for c in range(1, primo + 1):
         print('\033[31m',end='')
     print('{} '.format(c),end='')
 
+print()
 print('O número {} foi divisível {} vezes'.format(primo,tot))
 if tot == 2:
     print('Ele é primo!')
