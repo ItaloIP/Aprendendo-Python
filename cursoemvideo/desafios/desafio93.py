@@ -12,7 +12,6 @@ for c in range(0, partidas): #Pega os dados de partidas e faz um laço daquele v
 
 jogador['gols'] = gol[:] #Copia o que foi adicionado em 'gol'
 
-
 jogador['total'] = sum(gol)
 
 print('-='*30)
