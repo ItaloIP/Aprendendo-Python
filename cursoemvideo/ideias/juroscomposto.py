@@ -4,4 +4,4 @@ t = int(input('Quantos anos você pretende deixar este dinheiro investindo?: '))
 j1 = j / 100
 inv =  n * (1 + j1)**t
 l = inv - n
-print('Dentre {} anos, você vai obter R${:.2f} de lucro, e ao total, R${:.2f}. Vale apena investir?'.format(t,l,inv))
+print(f'Dentre {t} ano(s), você vai obter R${l:.2f} de lucro, e ao total, R${inv:.2f}. Vale apena investir?')

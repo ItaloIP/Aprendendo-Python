@@ -8,4 +8,4 @@ dia = 13.65
 cd = (((cdi * dia) / 100) / 100) + 1
 r = n * (cd ** a)
 r1 = r - n
-print('Você obterá R${:.2f} de lucro e ao todo, terá R${:.2f}'.format(r1, r))
+print(f'Você obterá R${r1:.2f} de lucro e ao todo, terá R${r:.2f}')

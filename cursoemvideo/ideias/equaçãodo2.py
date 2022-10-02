@@ -1,7 +1,7 @@
 from math import sqrt
 
 print('-'*25)
-print('\033[0;32;45mEquação do Segundo Grau\033[m')
+print('\033[0;32;45mEquação do 2° Grau\033[m')
 print('-'*25)
 
 a = int(input('Digite o valor do A: '))
@@ -17,6 +17,6 @@ menos = (-(b) - (sqrt(delta))) / (2 * a)
 mais = (-(b) + (sqrt(delta))) / (2 * a)
 
 print('=-='*15)
-print('X1 = {:.2f}'.format(mais))
-print('X2 = {:.2f}'.format(menos))
+print(f'X1 = {mais:.2f}')
+print(f'X2 = {menos:.2f}')
 print('=-='*15)
