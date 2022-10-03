@@ -1,7 +1,11 @@
-pessoas = {'nome': 'Italo', 'sexo':'M', 'idade': 16}
-pessoas['peso'] = 47.5
-#del pessoas['sexo']
-#print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
-#print(pessoas.keys())
-for k, v in pessoas.items():
-    print(f'{k} = {v}')
+# def mostraLinha():
+#     print('--------------')
+# mostraLinha()
+
+def mensagem(msg):
+    print('------------')
+    print(msg)
+    print('------------')
+mensagem('SISTEMA DE ALUNOS!')
+
+mensagem('ITALO')
