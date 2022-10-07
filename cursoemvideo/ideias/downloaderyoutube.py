@@ -1,6 +1,6 @@
 #Instale o PYTUBE e MOVIEPY!!
-# PIP Install pytube
-# PIP Install moviepy
+# pip install pytube
+# pip install moviepy
 from pytube import YouTube
 import moviepy.editor as mp
 import re
