@@ -1,6 +1,12 @@
 from random import randint
 
 def Sortear(lista):
+    """
+    -> Sortea números e adiciona na lista
+    :param lista: Pega o valor referente a lista no programa principal.
+    :return: sem retorno
+    Função criada por Italo
+    """
     for c in range(0,5):
         lista.append(randint(1,10))
     print(f'Números sorteados! {lista}')
@@ -16,7 +22,8 @@ def SomaPar(listaa):
 
 
 
-# Programa Principal
+#Programa Principal
 numeros = []
 Sortear(numeros)
 SomaPar(numeros)
+help(Sortear)
