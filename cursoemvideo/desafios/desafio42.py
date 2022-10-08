@@ -15,3 +15,4 @@ if m1 < m2 + m3 and m2 < m1 + m3 and m3 < m1 + m2:
         print('Estas medidas podem formar um triângulo ESCALENO')
 else:
     print('Estas medidas não podem formar um triângulo.')
+    
