@@ -1,14 +1,20 @@
-from datetime import date, datetime
-year = date.today().year
-print(year)
 def Votar(idade):
-    s = year - ano
+    """
+    -> Função para calcular a idade e ver se vai votar.
+    :param idade: Pegar o valor da variável 'ano' da lin30
+    :return: retorna um respectivo item referente a idade
+    """
+    from datetime import date
+    s = date.today().year - ano
+    print(f'Com {s} anos: ', end='')
     if s <= 15:
-        print('Não vota.')
-        return s
-
+        return 'Não vota!'
+    elif 16 <= s < 18 or s > 65:
+        return 'Voto Opcional!'
+    else:
+        return 'Voto OBRIGATÓRIO!'
 
 
 #Programa Principal
 ano = int(input('Ano de nascimento: '))
-print(ano)
+print(Votar(ano))

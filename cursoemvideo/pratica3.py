@@ -6,7 +6,7 @@ def pi(n=0):
 
 
 num = int(input('Digite um número: '))
-if pi(num):
+if pi(num, True):
     print('Par')
 else:
     print('Não é par')
