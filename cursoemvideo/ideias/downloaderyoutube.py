@@ -1,13 +1,13 @@
 #Instale o PYTUBE e MOVIEPY!!
 # pip install pytube
 # pip install moviepy
-from pytube import YouTube
-import moviepy.editor as mp
-import re
-import os
 
 #Função MP3
 def MP3(url):
+    from pytube import YouTube
+    import moviepy.editor as mp
+    import re
+    import os
     path = str('Download')
     yt = YouTube(url)
     ys = yt.streams.filter(only_audio=True).first().download(path)
@@ -26,6 +26,10 @@ def MP3(url):
     print("Finished!")
 #Função MP4
 def MP4(url):
+    from pytube import YouTube
+    import moviepy.editor as mp
+    import re
+    import os
     path = str('Download')
     yt = YouTube(url)
     ys = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(path)
