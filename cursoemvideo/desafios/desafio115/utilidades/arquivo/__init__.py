@@ -26,4 +26,23 @@ def lerArquivo(nome):
         print('Ocorreu um erro')
     else:
         interface.tit('Pessoas Cadastradas!')
-        print(a.readlines())
+        for lin in a:
+            dado = lin.split(';')
+            dado[1] = dado[1].replace('\n','')
+            print(f'{dado[0]:<30}{dado[1]:>3}')
+        a.close()
+
+
+def cadastrar(arq, nome='Desconhecido', idade=0):
+    try:
+        a = open(arq, 'at')
+    except:
+        print('Ocorreu algum erro.')
+    else:
+        try:
+            a.write(f'{nome};{idade}\n')
+        except:
+            print('Houve um ERRO em cadastrar uma pessoa!')
+        else:
+            print(f'Novo registro de {nome}')
+            a.close()

@@ -11,7 +11,10 @@ if not arquivo.arquivoExiste(arq):
 while True:
     resposta = interface.menu(['Cadastrar', 'Listar', 'Sair'])
     if resposta == 1:
-        interface.tit('Opção 1')
+        interface.tit('Novo cadastro')
+        nome = str(input('Nome: '))
+        idade = interface.Opc('Idade: ')
+        arquivo.cadastrar(arq, nome, idade)
     elif resposta == 2:
         interface.tit('Opção 2')
         arquivo.lerArquivo(arq)
