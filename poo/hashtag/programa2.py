@@ -5,7 +5,7 @@ class Clientes:
         self.cpf = cpf
 
 
-cliente1 = Clientes('José', 35, '350-639-476-20')
-cliente2 = Clientes('Italo', 16, '161-107-966-70')
+cliente1 = Clientes('José', 35, '351-629-476-20')
+cliente2 = Clientes('Italo', 16, '111-507-966-70')
 
 print(cliente1.cpf)
