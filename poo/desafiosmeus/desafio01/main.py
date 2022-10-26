@@ -1,27 +1,26 @@
-from classes import Cliente
+import classes
+produtos = []
+#Produtos
 
+produtos.append(classes.Produtos('Leite Condensado'))
+produtos.append(classes.Produtos('Arroz'))
 
-#Sistema NetPrime
-print('\033[0;31;40m           NetPrime\033[m')
+# --------------------------------------------------
+
+print(produtos[0].nome)
 while True:
     choice = int(input('''
-[ 0 ] Criar conta
-[ 1 ] Mudar plano
-[ 2 ] Configurações da conta
-[ 3 ] Assistir filme
-[ 4 ] Sair'''))
 
+[ 0 ] Repor estoque
+[ 1 ] Novo preço 
+[ 2 ] Comprar
+SELECT: '''))
     if choice == 0:
-        cliente = C
-
-#     if choice == 1:
-#         if subscribe == True:
-#             print(f'Plano atual: {cliente.Plano}')
-#             choice = int(input('''
-# Deseja: 
-# [ 0 ] BASIC
-# [ 1 ] Plus
-# [ 2 ] PREMIUM'''))
-#         else:
-#             print('Não cadastrado!')
-
+        print(f'[ 0 ]{produtos[0].nome} : QUANT {produtos[0].unidades}')
+        print(f'[ 1 ]{produtos[1].nome} : QUANT {produtos[1].unidades}')
+        produto = int(input('Qual produto quer repor?: '))
+        if produto == 0:
+            produtos[0].Reposicao(int(input('Número: ')))
+        elif produto == 1:
+            produtos[1].Reposicao(int(input('Número: ')))
+        
