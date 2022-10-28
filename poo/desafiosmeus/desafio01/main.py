@@ -2,14 +2,14 @@ import classes
 from time import sleep
 
 tokem = '1234'
-
 #Produtos
 produtos = []
+
 # --------------------------------------------------
 
 while True:
     choice = int(input('''
------------------------------------------
+----------------------------------------- 
 [ 0 ] Repor estoque (only admin)
 [ 1 ] Adicionar novo item (only admin)
 [ 2 ] Novo preço (only admin)
@@ -78,3 +78,4 @@ SELECT: '''))
     else:
         print('ERRO! Opção inválida!')
         sleep(2)
+
