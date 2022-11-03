@@ -70,7 +70,7 @@ SELECT: '''))
         password = str(input('Digite a senha: '))
         if password == tokem:
             for c, v in enumerate(produtos):
-                print(f'({c}) R${produtos[c].preço} {produtos[c].nome} : QUANT {produtos[c].unidades}')
+                print(f'R${produtos[c].preço} {produtos[c].nome} : QUANT {produtos[c].unidades}')
                 sleep(4.5)
         else: 
             print('Senha incorreta!')
